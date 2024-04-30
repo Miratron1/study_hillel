@@ -1,9 +1,9 @@
 .container {
-    width: 80%;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
     border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+    display: flex;
 }
 
 .logo {
@@ -39,7 +39,6 @@
     position: absolute;
     left: 0;
     bottom: -3px;
-    width: 100%;
     height: 2px;
     background-color: green;
     color: green;
@@ -65,23 +64,18 @@
 }
 
 .banner {
-    position: relative;
-    width: 80%;
-    max-width: 1200px;
-    margin: 50px auto;
-    max-width: 1200px;
-    height:470px ;
-    border: 1px solid #ccc;
+    max-width: 1280px;
+    margin: 0 auto;
     border-radius: 5px;
-    padding: 60px;
-    background-color: #fbfbfb;
+
 }
 
 .container1 {
     display: flex;
     justify-content: space-between;
     margin-top: 68px;
-    margin-left: 43px;
+    background-color: #fbfbfb;
+    padding-left: 50px;
 }
 
 h4 {
@@ -139,18 +133,15 @@ img {
     display: flex;
     margin: 0 auto;
     margin-top: 20px;
-    max-width: 100%;
+
 }
 
 body {
-    width: 100%;
-    height: auto;
-    padding-bottom: 50px;
     font-family: Arial, sans-serif;
 }
 
 .products .container {
-    width: 1440px;
+
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -209,7 +200,6 @@ body {
 .categories {
     flex: 1;
     width: 370px;
-    position: relative;
     height: 774px;
 }
 
@@ -239,11 +229,10 @@ body {
 }
 
 .categories img {
-    position: absolute;
-    margin-top: 20px;
-    width: px;
+
+    width: auto;
     height: auto;
-    display: block;
+
 }
 
 .product-list {
@@ -283,9 +272,45 @@ body {
     color: #3d3d3d;
 }
 
-.product img {
+.categories img {
+  margin-right: 180px;
+    display: inline-block;
+}
+
+
+.pagination {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+
+}
+
+.pagination input[type="radio"] {
+    display: none;
+}
+
+.pagination label {
+    background-color: #46a358;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+
+.pagination label:hover {
+    background-color: #4CAF50;
+}
+
+#page1:checked ~ label[for="page1"],
+#page2:checked ~ label[for="page2"],
+#page3:checked ~ label[for="page3"],
+#page4:checked ~ label[for="page4"] {
+    background-color: #4CAF50;
 }
 
 
-}
