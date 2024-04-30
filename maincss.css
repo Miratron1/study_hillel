@@ -370,5 +370,28 @@ body {
 .product:hover .green-line { 
     transform: translateY(0);
 }
+.product-image.discount {
+    position: relative;
+}
+
+.product-image.discount::before {
+    content: "13% OFF";
+    position: absolute;
+    background: #46a358;
+    padding: 7px 6px 8px;
+    top: 14px;
+    font-family: Italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-image.discount:hover::before {
+    opacity: 1;
+}
+
 
 
