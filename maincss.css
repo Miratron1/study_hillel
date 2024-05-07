@@ -177,9 +177,9 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 0;
-    text-decoration: none;
-    margin-left: 350px;
+
+    text-decoration: none;;
+
 }
 
 .filters > a {
@@ -215,9 +215,9 @@ body {
 }
 
 .categories {
-    flex: 1;
-    width: 370px;
-    height: 774px;
+    width: 311px;
+    padding-top: ;
+
 }
 
 .categories ul {
@@ -252,25 +252,20 @@ body {
 
 }
 
-.product-list {
-    flex: 2;
-}
+
 
 .product-row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: 105px;
-    margin-left: -100px;
+
+
 }
 
 .product {
-    margin-bottom: 20px;
     width: 258px;
-    height: 350px;
     background: #fbfbfb;
-    margin-left: 20px;
-    margin-bottom: 50px;
+
 }
 
 .product span {
@@ -367,7 +362,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.product:hover .green-line { 
+.product:hover .green-line {
     transform: translateY(0);
 }
 .product-image.discount {
@@ -391,6 +386,94 @@ body {
 
 .product-image.discount:hover::before {
     opacity: 1;
+}
+.product {
+    position: relative;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product:hover {
+    border: 2px solid green;
+}
+
+.overlay-icons img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.overlay-icons img:hover {
+    filter: none;
+}
+.product p:hover,
+.product span:hover {
+    color: green;
+}
+.container {
+        gap: 28px;
+
+}
+
+.block {
+
+    display: flex;
+        align-items: center;
+
+
+}
+.block h3{
+   font-family: Arial;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #3d3d3d;
+}
+.block p{
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: right;
+    color: #727272;
+    margin: 0px;
+}
+
+
+
+.find-more {
+    display: block;
+    background: #46a358;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+    border-radius: 6px;
+    width: 140px;
+    text-align: center;
+    height: 40px;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    padding-top: 11px;
+    margin-left: ;
+
+
+}
+
+.find-more .arrow {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+    color: white;
+}
+.find-more:hover {
+    background-color: darkgreen;
 }
 
 
